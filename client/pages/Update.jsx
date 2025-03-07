@@ -12,7 +12,6 @@ const Update = () => {
   });
   const [buttonColor, setButtonColor] = useState("grey");
 
-  // Fetch book details by ID
   const fetchBook = async () => {
     if (!bookId.trim()) {
       alert("Please enter a Book ID.");
@@ -26,21 +25,20 @@ const Update = () => {
         description: res.data.description,
         author: res.data.author,
       });
-      setButtonColor("green"); // Book found, turn button green
+      setButtonColor("green"); 
     } catch (error) {
       console.error("Error fetching book:", error);
       alert("Book not found!");
       setBook(null);
-      setButtonColor("red"); // Book not found, turn button red
+      setButtonColor("red");
     }
   };
 
-  // Handle input changes
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Update book details
   const handleUpdate = async () => {
     if (!book) {
       alert("No book selected for updating.");
@@ -51,7 +49,7 @@ const Update = () => {
       alert("Book updated successfully!");
       setBook(null);
       setBookId("");
-      setButtonColor("grey"); // Reset button color
+      setButtonColor("grey");
     } catch (error) {
       console.error("Error updating book:", error);
       alert("Failed to update book.");
