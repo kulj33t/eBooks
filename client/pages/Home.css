@@ -1,0 +1,69 @@
+/* Home.css */
+.container {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+}
+
+.title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Grid layout for book cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Book card styling */
+.card {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Book title */
+.book-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+/* Book ID */
+.book-id {
+    font-size: 14px;
+    font-weight: bold;
+    color: #777;
+}
+
+/* Author */
+.author {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+/* Description */
+.description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+}
