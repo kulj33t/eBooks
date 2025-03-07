@@ -27,7 +27,6 @@ const Delete = () => {
     }
   };
 
-  // Delete Book
   const deleteBook = async () => {
     if (!bookId) return;
 
