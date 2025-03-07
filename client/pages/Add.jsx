@@ -11,25 +11,25 @@ const Add = () => {
 
   const [buttonColor, setButtonColor] = useState("grey");
 
-  // Handle input changes
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Handle form submission
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!formData.bookname || !formData.description || !formData.author) {
       alert("All fields are required.");
-      setButtonColor("red"); // Indicate error
+      setButtonColor("red"); 
       return;
     }
 
     try {
       await axios.post("http://localhost:8000/books", formData);
       alert("Book added successfully!");
-      setFormData({ bookname: "", description: "", author: "" }); // Reset form
-      setButtonColor("green"); // Indicate success
+      setFormData({ bookname: "", description: "", author: "" }); 
+      setButtonColor("green");
     } catch (error) {
       console.error("Error adding book:", error);
       alert("Failed to add book.");
