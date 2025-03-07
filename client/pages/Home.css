@@ -1,4 +1,3 @@
-/* Home.css */
 .container {
     padding: 20px;
     text-align: center;
@@ -13,7 +12,6 @@
     color: #333;
 }
 
-/* Grid layout for book cards */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -22,7 +20,7 @@
     padding: 20px;
 }
 
-/* Book card styling */
+
 .card {
     background-color: #fff;
     border: 2px solid #ddd;
@@ -38,7 +36,7 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Book title */
+
 .book-title {
     font-size: 22px;
     font-weight: bold;
@@ -46,14 +44,14 @@
     color: #222;
 }
 
-/* Book ID */
+
 .book-id {
     font-size: 14px;
     font-weight: bold;
     color: #777;
 }
 
-/* Author */
+
 .author {
     font-size: 16px;
     font-weight: bold;
@@ -61,7 +59,7 @@
     color: #444;
 }
 
-/* Description */
+
 .description {
     font-size: 14px;
     color: #555;
